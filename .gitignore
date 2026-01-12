@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Airflow
+airflow/logs/
+airflow/dags/__pycache__/
+airflow.db
+airflow-webserver.pid
+airflow-scheduler.pid
+airflow.cfg
+config/airflow.cfg
+webserver_config.py
+
+# Environment variables
+.env
+.env.local
+
+# Dependencies lock files (optional - remove if you want to track)
+# poetry.lock
+# Pipfile.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
