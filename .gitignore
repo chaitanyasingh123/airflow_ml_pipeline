@@ -54,3 +54,8 @@ webserver_config.py
 # OS
 .DS_Store
 Thumbs.db
+
+# Others
+.ipynb_checkpoints/
+pgadmin_data/
+config/
