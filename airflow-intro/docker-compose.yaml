@@ -123,11 +123,14 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION: 'False'
+      PGADMIN_CONFIG_COOKIE_DEFAULT_SECURE: 'False'
+      PGADMIN_CONFIG_COOKIE_SAMESITE: "'Lax'"
     ports:
       - "5050:80"
     volumes:
       - ./pgadmin_data:/var/lib/pgadmin
-      - ./servers.json:/pgadmin4/servers.json # Auto-imports the servers on startup
     depends_on:
       - postgres
 
